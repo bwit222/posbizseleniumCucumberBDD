@@ -49,6 +49,7 @@ public class TestSearch extends Base {
 	public void ValidProductName() {
 	    log.info("========== Starting Valid Product Name Search Test ==========");
 	    
+
 	    try {
 	        log.info("Creating LandingPage object");
 	        LandingPage landingPage = new LandingPage(driver);

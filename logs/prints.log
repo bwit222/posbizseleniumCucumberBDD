@@ -1,12 +1,2 @@
-12:51:35.044 [main] INFO  Test.TestLogin - ========== Ending Login Test ==========
-12:51:35.066 [main] INFO  Test.TestLogin - ========== Starting Test Setup ==========
-12:52:13.849 [main] INFO  Test.TestLogin - ========== Starting Test Setup ==========
-12:52:17.188 [main] INFO  Test.TestLogin - Browser got launched successfully
-12:52:25.727 [main] INFO  Test.TestLogin - Navigate to the application URL: https://www.poscentral.biz/	  
-12:52:25.727 [main] INFO  Test.TestLogin - ========== Test Setup Completed ==========
-12:52:25.742 [main] INFO  Test.TestLogin - ========== Starting Login Test ==========
-12:52:25.742 [main] INFO  Test.TestLogin - Creating LandingPage object
-12:52:25.776 [main] INFO  Test.TestLogin - Clicking on Login Link
-12:52:32.525 [main] INFO  Test.TestLogin - Creating LoginPage object
-12:52:32.539 [main] INFO  Test.TestLogin - Entering User Email: shubhamtest333@gmail.com
-12:52:32.734 [main] INFO  Test.TestLogin - Entering Password: Bwit@123
+16:47:52.304 [main] INFO  Test.TestLogin - ========== Ending Login Test ==========
+16:47:52.317 [main] INFO  Test.TestLogin - ========== Starting Test Setup ==========
