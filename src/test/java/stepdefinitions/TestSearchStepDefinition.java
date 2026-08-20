@@ -20,6 +20,10 @@ public class TestSearchStepDefinition extends Base {
 	WebDriver driver;
 	LandingPage landingPage;
 	SearchPage searchPage;
+
+// ----------------------------------------------------	
+//Search for a product using a valid product name
+// ----------------------------------------------------	
 	
 	@Given("^User opens the browser$")
     public void User_opens_the_browser() throws IOException  {
@@ -57,9 +61,41 @@ public class TestSearchStepDefinition extends Base {
 		// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
 			boolean successVisible = searchPage.ProductFoundMessage().isDisplayed();
 			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
-						
-	        
+				    
 	    }
+
+// ----------------------------------------------------		
+//Search for a product using a Exact Product Name
+// ----------------------------------------------------	
+	
+	 @When("^User enters a Exact product name in the search box$")
+	    public void User_enters_a_Exact_product_name_in_the_search_box() {
+		 
+			landingPage = new LandingPage(driver);
+	        landingPage.SearchField().sendKeys(prop.getProperty("exactproductname"));
+	        	    	
+	 }
+	
+	
+	 @And("^User clicks search button$")
+	    public void User_clicks_search_button() {
+		 
+			landingPage = new LandingPage(driver);
+	        landingPage.SearchButton().click();	      	    
+	 }
+	
+	 @Then("^Search results for the Exact Product Name should be displayed$")
+	    public void Search_results_for_the_Exact_Product_Name_should_be_displayed() {
+		 
+		 searchPage = new SearchPage(driver);
+	        
+			// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+				boolean successVisible = searchPage.ProductFoundMessage().isDisplayed();
+				Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+					 	      	    
+	 }
+	
+		
 	
 	@After
 	public void closeBrowser() {

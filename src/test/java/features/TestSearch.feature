@@ -6,3 +6,11 @@ And User navigates to the home page
 When User enters a valid product name in the search box 
 And User clicks the search button 
 Then Search results for the product should be displayed
+
+Scenario: Search for a product using a Exact Product Name 
+Given User opens the browser 
+And User navigates to the home page 
+When User enters a Exact product name in the search box 
+And User clicks search button 
+Then Search results for the Exact Product Name should be displayed
+
