@@ -54,20 +54,10 @@ public class TestSearchStepDefinition extends Base {
 		
 		 searchPage = new SearchPage(driver);
 	        
-	        boolean productNotFoundVisible = false;
-	        try {
-	            productNotFoundVisible = searchPage.ProductNotFoundMessage().isDisplayed();
-	           
-	        } catch (NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
-	            // Element not found = product WAS found = this is EXPECTED for valid product
-	         
-	            productNotFoundVisible = false;
-	        }
-	        
-	        // Test FAILS if "not found" message is visible (product search failed)
-	        // Test PASSES if "not found" message is NOT visible (product search succeeded)
-	        Assert.assertFalse(productNotFoundVisible, "Product NOT found message should not be visible for a valid product");
-	       
+		// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+			boolean successVisible = searchPage.ProductFoundMessage().isDisplayed();
+			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+						
 	        
 	    }
 	
