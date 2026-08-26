@@ -10,10 +10,10 @@ import io.cucumber.testng.CucumberOptions;
 		glue="stepdefinitions")
 public class Runner extends AbstractTestNGCucumberTests {
 
-	@Override
-	@DataProvider(parallel = true)
-	public Object[][] scenarios() {
-	return super.scenarios();
-	}
+	//@Override
+	//@DataProvider(parallel = true)
+	//public Object[][] scenarios() {
+	//return super.scenarios();
+	//}
 }
 
