@@ -64,26 +64,16 @@ public class TestSearch extends Base {
 	        
 	        log.info("Creating SearchPage object");
 	        SearchPage searchPage = new SearchPage(driver);
-	        
-	        boolean productNotFoundVisible = false;
-	        try {
-	            productNotFoundVisible = searchPage.ProductNotFoundMessage().isDisplayed();
-	            log.info("Product not found message is visible");
-	        } catch (NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
-	            // Element not found = product WAS found = this is EXPECTED for valid product
-	            log.info("Product not found message is NOT visible — valid product was found successfully");
-	            productNotFoundVisible = false;
-	        }
-	        
-	        // Test FAILS if "not found" message is visible (product search failed)
-	        // Test PASSES if "not found" message is NOT visible (product search succeeded)
-	        Assert.assertFalse(productNotFoundVisible, "Product NOT found message should not be visible for a valid product");
-	        log.info("========== Search Test Passed ==========");
-	        
-	    } catch (Exception e) {
-	        log.error("Error occurred during Search Test: " + e.getMessage(), e);
-	        Assert.fail("Exception during Search Test: " + e.getMessage(), e);
-	    }
+	        	    
+	    	// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+			boolean successVisible = searchPage.ProductFoundMessage().isDisplayed();
+			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+						
+		} catch (Exception e) {
+			log.error("Error occurred during Login Test: " + e.getMessage());
+			// Make sure exception causes test failure
+			Assert.fail("Exception during Login Test: " + e.getMessage(), e);
+		}
 	}
 
 	//@Test
@@ -105,25 +95,15 @@ public class TestSearch extends Base {
 	        log.info("Creating SearchPage object");
 	        SearchPage searchPage = new SearchPage(driver);
 	        
-	        boolean productNotFoundVisible = false;
-	        try {
-	            productNotFoundVisible = searchPage.ProductNotFoundMessage().isDisplayed();
-	            log.info("Product not found message is visible");
-	        } catch (NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
-	            // Element not found = product WAS found = this is EXPECTED for valid product
-	            log.info("Product not found message is NOT visible — exact product was found successfully");
-	            productNotFoundVisible = false;
-	        }
-	        
-	        // Test FAILS if "not found" message is visible (product search failed)
-	        // Test PASSES if "not found" message is NOT visible (product search succeeded)
-	        Assert.assertFalse(productNotFoundVisible, "Product NOT found message should not be visible for an exact product name");
-	        log.info("========== Exact Product Name Search Test Passed ==========");
-	        
-	    } catch (Exception e) {
-	        log.error("Error occurred during Exact Product Name Search Test: " + e.getMessage(), e);
-	        Assert.fail("Exception during Exact Product Name Search Test: " + e.getMessage(), e);
-	    }
+	      	// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+	    			boolean successVisible = searchPage.ProductFoundMessage().isDisplayed();
+	    			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+	    						
+	    		} catch (Exception e) {
+	    			log.error("Error occurred during Login Test: " + e.getMessage());
+	    			// Make sure exception causes test failure
+	    			Assert.fail("Exception during Login Test: " + e.getMessage(), e);
+	    		}
 	}
 	
 	@Test	
@@ -145,25 +125,15 @@ public class TestSearch extends Base {
 	        log.info("Creating SearchPage object");
 	        SearchPage searchPage = new SearchPage(driver);
 	        
-	        boolean productNotFoundVisible = false;
-	        try {
-	            productNotFoundVisible = searchPage.ProductNotFoundMessage().isDisplayed();
-	            log.info("Product not found message is visible");
-	        } catch (NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
-	            // Element not found = product WAS found = this is EXPECTED for valid product
-	            log.info("Product not found message is NOT visible — product with SKU was found successfully");
-	            productNotFoundVisible = false;
-	        }
-	        
-	        // Test FAILS if "not found" message is visible (product search failed)
-	        // Test PASSES if "not found" message is NOT visible (product search succeeded)
-	        Assert.assertFalse(productNotFoundVisible, "Product NOT found message should not be visible for a valid SKU number");
-	        log.info("========== SKU Number Search Test Passed ==========");
-	        
-	    } catch (Exception e) {
-	        log.error("Error occurred during SKU Number Search Test: " + e.getMessage(), e);
-	        Assert.fail("Exception during SKU Number Search Test: " + e.getMessage(), e);
-	    }
+	      	// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+	    			boolean successVisible = searchPage.ProductFoundMessage().isDisplayed();
+	    			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+	    						
+	    		} catch (Exception e) {
+	    			log.error("Error occurred during Login Test: " + e.getMessage());
+	    			// Make sure exception causes test failure
+	    			Assert.fail("Exception during Login Test: " + e.getMessage(), e);
+	    		}
 	}
 	
 	@Test
@@ -185,25 +155,15 @@ public class TestSearch extends Base {
 	        log.info("Creating SearchPage object");
 	        SearchPage searchPage = new SearchPage(driver);
 	        
-	        boolean productNotFoundVisible = false;
-	        try {
-	            productNotFoundVisible = searchPage.ProductNotFoundMessage().isDisplayed();
-	            log.info("Product not found message is visible");
-	        } catch (NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
-	            // Element not found = product WAS found = this is EXPECTED for valid product
-	            log.info("Product not found message is NOT visible — partial product was found successfully");
-	            productNotFoundVisible = false;
-	        }
-	        
-	        // Test FAILS if "not found" message is visible (product search failed)
-	        // Test PASSES if "not found" message is NOT visible (product search succeeded)
-	        Assert.assertFalse(productNotFoundVisible, "Product NOT found message should not be visible for a partial product name");
-	        log.info("========== Partial Product Name Search Test Passed ==========");
-	        
-	    } catch (Exception e) {
-	        log.error("Error occurred during Partial Product Name Search Test: " + e.getMessage(), e);
-	        Assert.fail("Exception during Partial Product Name Search Test: " + e.getMessage(), e);
-	    }
+	      	// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+	    			boolean successVisible = searchPage.ProductFoundMessage().isDisplayed();
+	    			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+	    						
+	    		} catch (Exception e) {
+	    			log.error("Error occurred during Login Test: " + e.getMessage());
+	    			// Make sure exception causes test failure
+	    			Assert.fail("Exception during Login Test: " + e.getMessage(), e);
+	    		}
 	}
 	
 	@Test	
@@ -225,25 +185,15 @@ public class TestSearch extends Base {
 	        log.info("Creating SearchPage object");
 	        SearchPage searchPage = new SearchPage(driver);
 	        
-	        boolean productNotFoundVisible = false;
-	        try {
-	            productNotFoundVisible = searchPage.ProductNotFoundMessage().isDisplayed();
-	            log.info("Product not found message is visible");
-	        } catch (NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
-	            // Element not found = product WAS found = this is EXPECTED for valid product
-	            log.info("Product not found message is NOT visible — brand name was found successfully");
-	            productNotFoundVisible = false;
-	        }
-	        
-	        // Test FAILS if "not found" message is visible (product search failed)
-	        // Test PASSES if "not found" message is NOT visible (product search succeeded)
-	        Assert.assertFalse(productNotFoundVisible, "Product NOT found message should not be visible for a valid brand name");
-	        log.info("========== Brand Name Search Test Passed ==========");
-	        
-	    } catch (Exception e) {
-	        log.error("Error occurred during Brand Name Search Test: " + e.getMessage(), e);
-	        Assert.fail("Exception during Brand Name Search Test: " + e.getMessage(), e);
-	    }
+	      	// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+	    			boolean successVisible = searchPage.ProductFoundMessage().isDisplayed();
+	    			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+	    						
+	    		} catch (Exception e) {
+	    			log.error("Error occurred during Login Test: " + e.getMessage());
+	    			// Make sure exception causes test failure
+	    			Assert.fail("Exception during Login Test: " + e.getMessage(), e);
+	    		}
 	}
 	
 	@Test
@@ -265,25 +215,15 @@ public class TestSearch extends Base {
 	        log.info("Creating SearchPage object");
 	        SearchPage searchPage = new SearchPage(driver);
 	        
-	        boolean productNotFoundVisible = false;
-	        try {
-	            productNotFoundVisible = searchPage.ProductNotFoundMessage().isDisplayed();
-	            log.info("Product not found message is visible");
-	        } catch (NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
-	            // Element not found = product WAS found = this is EXPECTED for valid product
-	            log.info("Product not found message is NOT visible — lowercase product was found successfully");
-	            productNotFoundVisible = false;
-	        }
-	        
-	        // Test FAILS if "not found" message is visible (product search failed)
-	        // Test PASSES if "not found" message is NOT visible (product search succeeded)
-	        Assert.assertFalse(productNotFoundVisible, "Product NOT found message should not be visible for a lowercase product name");
-	        log.info("========== Lowercase Product Name Search Test Passed ==========");
-	        
-	    } catch (Exception e) {
-	        log.error("Error occurred during Lowercase Product Name Search Test: " + e.getMessage(), e);
-	        Assert.fail("Exception during Lowercase Product Name Search Test: " + e.getMessage(), e);
-	    }
+	      	// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+	    			boolean successVisible = searchPage.ProductFoundMessage().isDisplayed();
+	    			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+	    						
+	    		} catch (Exception e) {
+	    			log.error("Error occurred during Login Test: " + e.getMessage());
+	    			// Make sure exception causes test failure
+	    			Assert.fail("Exception during Login Test: " + e.getMessage(), e);
+	    		}
 	}
 	
 	@Test	
@@ -305,25 +245,15 @@ public class TestSearch extends Base {
 	        log.info("Creating SearchPage object");
 	        SearchPage searchPage = new SearchPage(driver);
 	        
-	        boolean productNotFoundVisible = false;
-	        try {
-	            productNotFoundVisible = searchPage.ProductNotFoundMessage().isDisplayed();
-	            log.info("Product not found message is visible");
-	        } catch (NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
-	            // Element not found = product WAS found = this is EXPECTED for valid product
-	            log.info("Product not found message is NOT visible — uppercase product was found successfully");
-	            productNotFoundVisible = false;
-	        }
-	        
-	        // Test FAILS if "not found" message is visible (product search failed)
-	        // Test PASSES if "not found" message is NOT visible (product search succeeded)
-	        Assert.assertFalse(productNotFoundVisible, "Product NOT found message should not be visible for an uppercase product name");
-	        log.info("========== Uppercase Product Name Search Test Passed ==========");
-	        
-	    } catch (Exception e) {
-	        log.error("Error occurred during Uppercase Product Name Search Test: " + e.getMessage(), e);
-	        Assert.fail("Exception during Uppercase Product Name Search Test: " + e.getMessage(), e);
-	    }
+	      	// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+	    			boolean successVisible = searchPage.ProductFoundMessage().isDisplayed();
+	    			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+	    						
+	    		} catch (Exception e) {
+	    			log.error("Error occurred during Login Test: " + e.getMessage());
+	    			// Make sure exception causes test failure
+	    			Assert.fail("Exception during Login Test: " + e.getMessage(), e);
+	    		}
 	}
 	
 	@Test	
@@ -345,27 +275,16 @@ public class TestSearch extends Base {
 	        log.info("Creating SearchPage object");
 	        SearchPage searchPage = new SearchPage(driver);
 	        
-	        boolean productNotFoundVisible = false;
-	        try {
-	            productNotFoundVisible = searchPage.ProductNotFoundMessage().isDisplayed();
-	            log.info("Product not found message is visible");
-	        } catch (NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
-	            // Element not found = product WAS found = this is EXPECTED for valid product
-	            log.info("Product not found message is NOT visible — mixcase product was found successfully");
-	            productNotFoundVisible = false;
-	        }
-	        
-	        // Test FAILS if "not found" message is visible (product search failed)
-	        // Test PASSES if "not found" message is NOT visible (product search succeeded)
-	        Assert.assertFalse(productNotFoundVisible, "Product NOT found message should not be visible for a mixcase product name");
-	        log.info("========== Mixcase Product Name Search Test Passed ==========");
-	        
-	    } catch (Exception e) {
-	        log.error("Error occurred during Mixcase Product Name Search Test: " + e.getMessage(), e);
-	        Assert.fail("Exception during Mixcase Product Name Search Test: " + e.getMessage(), e);
-	    }
+	      	// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+	    			boolean successVisible = searchPage.ProductFoundMessage().isDisplayed();
+	    			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+	    						
+	    		} catch (Exception e) {
+	    			log.error("Error occurred during Login Test: " + e.getMessage());
+	    			// Make sure exception causes test failure
+	    			Assert.fail("Exception during Login Test: " + e.getMessage(), e);
+	    		}
 	}
-	
 	@Test	
 	public void SpecialCharacterProductName() {
 	    log.info("========== Starting Special Character Product Name Search Test ==========");
@@ -385,25 +304,15 @@ public class TestSearch extends Base {
 	        log.info("Creating SearchPage object");
 	        SearchPage searchPage = new SearchPage(driver);
 	        
-	        boolean productNotFoundVisible = false;
-	        try {
-	            productNotFoundVisible = searchPage.ProductNotFoundMessage().isDisplayed();
-	            log.info("Product not found message is visible");
-	        } catch (NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
-	            // Element not found = product WAS found = this is EXPECTED for valid product
-	            log.info("Product not found message is NOT visible — special character product was found successfully");
-	            productNotFoundVisible = false;
-	        }
-	        
-	        // Test FAILS if "not found" message is visible (product search failed)
-	        // Test PASSES if "not found" message is NOT visible (product search succeeded)
-	        Assert.assertFalse(productNotFoundVisible, "Product NOT found message should not be visible for a special character product name");
-	        log.info("========== Special Character Product Name Search Test Passed ==========");
-	        
-	    } catch (Exception e) {
-	        log.error("Error occurred during Special Character Product Name Search Test: " + e.getMessage(), e);
-	        Assert.fail("Exception during Special Character Product Name Search Test: " + e.getMessage(), e);
-	    }
+	      	// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+	    			boolean successVisible = searchPage.ProductFoundMessage().isDisplayed();
+	    			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+	    						
+	    		} catch (Exception e) {
+	    			log.error("Error occurred during Login Test: " + e.getMessage());
+	    			// Make sure exception causes test failure
+	    			Assert.fail("Exception during Login Test: " + e.getMessage(), e);
+	    		}
 	}
 	
 	@Test
@@ -425,25 +334,15 @@ public class TestSearch extends Base {
 	        log.info("Creating SearchPage object");
 	        SearchPage searchPage = new SearchPage(driver);
 	        
-	        boolean productNotFoundVisible = false;
-	        try {
-	            productNotFoundVisible = searchPage.ProductNotFoundMessage().isDisplayed();
-	            log.info("Product not found message is visible");
-	        } catch (NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
-	            // Element not found = product WAS found = this is EXPECTED for valid product
-	            log.info("Product not found message is NOT visible — discontinued product was found successfully");
-	            productNotFoundVisible = false;
-	        }
-	        
-	        // Test FAILS if "not found" message is visible (product search failed)
-	        // Test PASSES if "not found" message is NOT visible (product search succeeded)
-	        Assert.assertFalse(productNotFoundVisible, "Product NOT found message should not be visible for a discontinued product name");
-	        log.info("========== Discontinued Product Name Search Test Passed ==========");
-	        
-	    } catch (Exception e) {
-	        log.error("Error occurred during Discontinued Product Name Search Test: " + e.getMessage(), e);
-	        Assert.fail("Exception during Discontinued Product Name Search Test: " + e.getMessage(), e);
-	    }
+	      	// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+	    			boolean successVisible = searchPage.ProductFoundMessage().isDisplayed();
+	    			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+	    						
+	    		} catch (Exception e) {
+	    			log.error("Error occurred during Login Test: " + e.getMessage());
+	    			// Make sure exception causes test failure
+	    			Assert.fail("Exception during Login Test: " + e.getMessage(), e);
+	    		}
 	}
 	
 	@Test	
@@ -465,25 +364,15 @@ public class TestSearch extends Base {
 	        log.info("Creating SearchPage object");
 	        SearchPage searchPage = new SearchPage(driver);
 	        
-	        boolean productNotFoundVisible = false;
-	        try {
-	            productNotFoundVisible = searchPage.ProductNotFoundMessage().isDisplayed();
-	            log.info("Product not found message is visible");
-	        } catch (NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
-	            // Element not found = product WAS found = this is EXPECTED for valid product
-	            log.info("Product not found message is NOT visible — discontinued product SKU was found successfully");
-	            productNotFoundVisible = false;
-	        }
-	        
-	        // Test FAILS if "not found" message is visible (product search failed)
-	        // Test PASSES if "not found" message is NOT visible (product search succeeded)
-	        Assert.assertFalse(productNotFoundVisible, "Product NOT found message should not be visible for a discontinued product SKU");
-	        log.info("========== Discontinued Product SKU Search Test Passed ==========");
-	        
-	    } catch (Exception e) {
-	        log.error("Error occurred during Discontinued Product SKU Search Test: " + e.getMessage(), e);
-	        Assert.fail("Exception during Discontinued Product SKU Search Test: " + e.getMessage(), e);
-	    }
+	      	// ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+	    			boolean successVisible = searchPage.ProductFoundMessage().isDisplayed();
+	    			Assert.assertTrue(successVisible, "Success message is displayed - login may have failed");
+	    						
+	    		} catch (Exception e) {
+	    			log.error("Error occurred during Login Test: " + e.getMessage());
+	    			// Make sure exception causes test failure
+	    			Assert.fail("Exception during Login Test: " + e.getMessage(), e);
+	    		}
 	}
 	
 	@Test	

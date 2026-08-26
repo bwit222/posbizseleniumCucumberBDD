@@ -21,12 +21,7 @@ public class Listeners extends Base implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
-//===================	
-/*		String testName = result.getName();		
-		extentTest = extentReport.createTest(testName);
-		extentTestThread.set(extentTest);  // Store the ExtentTest object in ThreadLocal for thread safety
-*/
-//===================	
+
 	    String testName = result.getName();
 	    String className = result.getTestClass().getRealClass().getSimpleName();
 	   // String methodName = result.getMethod().getMethodName();
