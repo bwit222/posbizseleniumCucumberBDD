@@ -289,15 +289,7 @@ public class TestSearchStepDefinition extends Base {
 
 		    }
 	
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
+	 	 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&	
 	 
 	    // =====================================================
@@ -312,7 +304,21 @@ public class TestSearchStepDefinition extends Base {
 	        boolean resultDisplayed = searchPage.ProductFoundMessage().isDisplayed();
 	        Assert.assertTrue(resultDisplayed,"Search results were not displayed");
 	    }
+
+	    // =====================================================
+	    // COMMON - Invalid Search Result Validation
+	    // =====================================================
+	    
+	    private void invalidateSearchResult() {
+
+	        searchPage = new SearchPage(driver);
+
+	     // ASSERT: test passes only if SuccessMessage() is displayed, otherwise fail
+	     			boolean successVisible = searchPage.ProductNotFoundMessage().isDisplayed();
+	     			Assert.assertTrue(successVisible, "Product not found message is displayed - Search may have failed");
+	    }
 	 
+	
 	    // =====================================================
 	    // CLOSE BROWSER
 	    // =====================================================
