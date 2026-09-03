@@ -82,7 +82,7 @@ Given User opens the browser
 Given  User navigates to the home page 
 When User enters a InvalidProductName in the search box 
 When  User clicks the search button 
-Then Search results for the InvalidProductName should be displayed
+Then Search results for the InvalidProductName should not be displayed
 
 
 
