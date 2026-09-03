@@ -285,7 +285,7 @@ public class TestSearchStepDefinition extends Base {
 	@Then("^Search results for the InvalidProductName should not be displayed$")
 	public void Search_results_for_the_InvalidProductName_should_not_be_displayed()  {
 			
-			validateSearchResult();
+		    invalidateSearchResult();
 
 		    }
 	

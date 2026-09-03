@@ -1,228 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="0" failed="12" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-21T11:46:36 IST" name="Suite" finished-at="2026-08-21T11:46:41 IST" duration-ms="4335">
+  <suite started-at="2026-09-03T14:00:32 IST" name="Suite" finished-at="2026-09-03T14:04:16 IST" duration-ms="224174">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@72ade7e3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@609bcfb6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-08-21T11:46:36 IST" name="Test" finished-at="2026-08-21T11:46:41 IST" duration-ms="4335">
+    <test started-at="2026-09-03T14:00:32 IST" name="Test" finished-at="2026-09-03T14:04:16 IST" duration-ms="224174">
       <class name="runner.Runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Runner@72ade7e3]" started-at="2026-08-21T11:46:36 IST" name="setUpClass" finished-at="2026-08-21T11:46:37 IST" duration-ms="309" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Runner@609bcfb6]" started-at="2026-09-03T14:00:32 IST" name="setUpClass" finished-at="2026-09-03T14:00:32 IST" duration-ms="228" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3eb77ea8]]>
+                <![CDATA[org.testng.TestRunner@48793bef]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@72ade7e3]" started-at="2026-08-21T11:46:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-21T11:46:40 IST" duration-ms="3008" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for a product using a LowerCaseProductName"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Product with Valid Product Name"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-at Resources.Base.intializeDriver(Base.java:46)
-at stepdefinitions.TestSearchStepDefinition.User_opens_the_browser(TestSearchStepDefinition.java:35)
-at ✽.User opens the browser(file:///C:/Users/ShubhamKrSinghBroadw/eclipse-workspace/CucumberBDDLocalRepo/posbizseleniumCucumberBDD/src/test/java/features/TestSearch.feature:39)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
-at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-... 7 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
-at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-... 11 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@72ade7e3]" started-at="2026-08-21T11:46:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-21T11:46:40 IST" duration-ms="3008" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for a product using a BrandName"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Product with Valid Product Name"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-at Resources.Base.intializeDriver(Base.java:46)
-at stepdefinitions.TestSearchStepDefinition.User_opens_the_browser(TestSearchStepDefinition.java:35)
-at ✽.User opens the browser(file:///C:/Users/ShubhamKrSinghBroadw/eclipse-workspace/CucumberBDDLocalRepo/posbizseleniumCucumberBDD/src/test/java/features/TestSearch.feature:32)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
-at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-... 7 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
-at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-... 11 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@72ade7e3]" started-at="2026-08-21T11:46:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-21T11:46:40 IST" duration-ms="3008" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for a product using a Partial Product Name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Product with Valid Product Name"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-at Resources.Base.intializeDriver(Base.java:46)
-at stepdefinitions.TestSearchStepDefinition.User_opens_the_browser(TestSearchStepDefinition.java:35)
-at ✽.User opens the browser(file:///C:/Users/ShubhamKrSinghBroadw/eclipse-workspace/CucumberBDDLocalRepo/posbizseleniumCucumberBDD/src/test/java/features/TestSearch.feature:25)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
-at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-... 7 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
-at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-... 11 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@72ade7e3]" started-at="2026-08-21T11:46:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-21T11:46:40 IST" duration-ms="3008" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@609bcfb6]" started-at="2026-09-03T14:00:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-03T14:00:58 IST" duration-ms="25720" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -235,61 +34,10 @@ at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.
               </value>
             </param>
           </params>
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-at Resources.Base.intializeDriver(Base.java:46)
-at stepdefinitions.TestSearchStepDefinition.User_opens_the_browser(TestSearchStepDefinition.java:35)
-at ✽.User opens the browser(file:///C:/Users/ShubhamKrSinghBroadw/eclipse-workspace/CucumberBDDLocalRepo/posbizseleniumCucumberBDD/src/test/java/features/TestSearch.feature:4)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
-at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-... 7 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
-at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-... 11 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@72ade7e3]" started-at="2026-08-21T11:46:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-21T11:46:40 IST" duration-ms="3008" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@609bcfb6]" started-at="2026-09-03T14:00:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-03T14:01:15 IST" duration-ms="17061" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -302,128 +50,10 @@ at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.
               </value>
             </param>
           </params>
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-at Resources.Base.intializeDriver(Base.java:46)
-at stepdefinitions.TestSearchStepDefinition.User_opens_the_browser(TestSearchStepDefinition.java:35)
-at ✽.User opens the browser(file:///C:/Users/ShubhamKrSinghBroadw/eclipse-workspace/CucumberBDDLocalRepo/posbizseleniumCucumberBDD/src/test/java/features/TestSearch.feature:11)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
-at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-... 7 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
-at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-... 11 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@72ade7e3]" started-at="2026-08-21T11:46:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-21T11:46:40 IST" duration-ms="3008" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for a product using a UpperCaseProductName"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Product with Valid Product Name"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-at Resources.Base.intializeDriver(Base.java:46)
-at stepdefinitions.TestSearchStepDefinition.User_opens_the_browser(TestSearchStepDefinition.java:35)
-at ✽.User opens the browser(file:///C:/Users/ShubhamKrSinghBroadw/eclipse-workspace/CucumberBDDLocalRepo/posbizseleniumCucumberBDD/src/test/java/features/TestSearch.feature:46)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
-at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-... 7 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
-at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-... 11 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@72ade7e3]" started-at="2026-08-21T11:46:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-21T11:46:40 IST" duration-ms="3008" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@609bcfb6]" started-at="2026-09-03T14:01:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-03T14:01:34 IST" duration-ms="18466" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -436,65 +66,14 @@ at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.
               </value>
             </param>
           </params>
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-at Resources.Base.intializeDriver(Base.java:46)
-at stepdefinitions.TestSearchStepDefinition.User_opens_the_browser(TestSearchStepDefinition.java:35)
-at ✽.User opens the browser(file:///C:/Users/ShubhamKrSinghBroadw/eclipse-workspace/CucumberBDDLocalRepo/posbizseleniumCucumberBDD/src/test/java/features/TestSearch.feature:18)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
-at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-... 7 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
-at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-... 11 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@72ade7e3]" started-at="2026-08-21T11:46:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-21T11:46:40 IST" duration-ms="3007" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@609bcfb6]" started-at="2026-09-03T14:01:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-03T14:01:51 IST" duration-ms="17227" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Search for a product using a SpecialCharacterProductName"]]>
+                <![CDATA["Search for a product using a Partial Product Name"]]>
               </value>
             </param>
             <param index="1">
@@ -503,61 +82,58 @@ at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.
               </value>
             </param>
           </params>
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-at Resources.Base.intializeDriver(Base.java:46)
-at stepdefinitions.TestSearchStepDefinition.User_opens_the_browser(TestSearchStepDefinition.java:35)
-at ✽.User opens the browser(file:///C:/Users/ShubhamKrSinghBroadw/eclipse-workspace/CucumberBDDLocalRepo/posbizseleniumCucumberBDD/src/test/java/features/TestSearch.feature:60)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
-at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-... 7 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
-at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-... 11 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@72ade7e3]" started-at="2026-08-21T11:46:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-21T11:46:40 IST" duration-ms="3007" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@609bcfb6]" started-at="2026-09-03T14:01:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-03T14:02:10 IST" duration-ms="18650" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for a product using a BrandName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Product with Valid Product Name"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@609bcfb6]" started-at="2026-09-03T14:02:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-03T14:02:27 IST" duration-ms="17556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for a product using a LowerCaseProductName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Product with Valid Product Name"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@609bcfb6]" started-at="2026-09-03T14:02:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-03T14:02:44 IST" duration-ms="17136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for a product using a UpperCaseProductName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Product with Valid Product Name"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@609bcfb6]" started-at="2026-09-03T14:02:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-03T14:03:04 IST" duration-ms="19549" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -570,61 +146,26 @@ at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.
               </value>
             </param>
           </params>
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-at Resources.Base.intializeDriver(Base.java:46)
-at stepdefinitions.TestSearchStepDefinition.User_opens_the_browser(TestSearchStepDefinition.java:35)
-at ✽.User opens the browser(file:///C:/Users/ShubhamKrSinghBroadw/eclipse-workspace/CucumberBDDLocalRepo/posbizseleniumCucumberBDD/src/test/java/features/TestSearch.feature:53)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
-at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-... 7 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
-at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-... 11 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@72ade7e3]" started-at="2026-08-21T11:46:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-21T11:46:40 IST" duration-ms="3007" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@609bcfb6]" started-at="2026-09-03T14:03:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-03T14:03:27 IST" duration-ms="22732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for a product using a SpecialCharacterProductName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Product with Valid Product Name"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@609bcfb6]" started-at="2026-09-03T14:03:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-03T14:03:46 IST" duration-ms="19648" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -637,128 +178,10 @@ at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.
               </value>
             </param>
           </params>
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-at Resources.Base.intializeDriver(Base.java:46)
-at stepdefinitions.TestSearchStepDefinition.User_opens_the_browser(TestSearchStepDefinition.java:35)
-at ✽.User opens the browser(file:///C:/Users/ShubhamKrSinghBroadw/eclipse-workspace/CucumberBDDLocalRepo/posbizseleniumCucumberBDD/src/test/java/features/TestSearch.feature:67)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
-at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-... 7 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
-at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-... 11 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@72ade7e3]" started-at="2026-08-21T11:46:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-21T11:46:41 IST" duration-ms="850" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for a product using a InvalidProductName"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Product with Valid Product Name"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-at Resources.Base.intializeDriver(Base.java:46)
-at stepdefinitions.TestSearchStepDefinition.User_opens_the_browser(TestSearchStepDefinition.java:35)
-at ✽.User opens the browser(file:///C:/Users/ShubhamKrSinghBroadw/eclipse-workspace/CucumberBDDLocalRepo/posbizseleniumCucumberBDD/src/test/java/features/TestSearch.feature:81)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
-at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-... 7 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
-at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-... 11 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@72ade7e3]" started-at="2026-08-21T11:46:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-21T11:46:41 IST" duration-ms="859" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@609bcfb6]" started-at="2026-09-03T14:03:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-03T14:04:00 IST" duration-ms="13567" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -771,61 +194,26 @@ at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.
               </value>
             </param>
           </params>
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-at Resources.Base.intializeDriver(Base.java:46)
-at stepdefinitions.TestSearchStepDefinition.User_opens_the_browser(TestSearchStepDefinition.java:35)
-at ✽.User opens the browser(file:///C:/Users/ShubhamKrSinghBroadw/eclipse-workspace/CucumberBDDLocalRepo/posbizseleniumCucumberBDD/src/test/java/features/TestSearch.feature:74)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
-at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-... 7 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
-at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-... 11 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@72ade7e3]" started-at="2026-08-21T11:46:41 IST" name="tearDownClass" finished-at="2026-08-21T11:46:41 IST" duration-ms="4" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@609bcfb6]" started-at="2026-09-03T14:04:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-03T14:04:16 IST" duration-ms="16515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for a product using a InvalidProductName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Product with Valid Product Name"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@609bcfb6]" started-at="2026-09-03T14:04:16 IST" name="tearDownClass" finished-at="2026-09-03T14:04:16 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
