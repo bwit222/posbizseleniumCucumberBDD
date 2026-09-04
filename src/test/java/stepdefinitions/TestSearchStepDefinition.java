@@ -282,18 +282,20 @@ public class TestSearchStepDefinition extends Base {
 	   // SCENARIO 12 - Validate InvalidProductName
 	   // =====================================================
 	 
-	@Then("^Search results for the InvalidProductName should be displayed$")
-	public void Search_results_for_the_InvalidProductName_should_be_displayed()  {
+	@Then("^Search results for the InvalidProductName should not be displayed$")
+	public void Search_results_for_the_InvalidProductName_should_not_be_displayed()  {
 			
-			validateSearchResult();
+		    invalidateSearchResult();
 
 		    }
 	
-	 	 
+	 
+	
+	 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&	
 	 
 	    // =====================================================
-	    // COMMON - Search Result Validation
+	    // COMMON - Valid Search Result Validation
 	    // =====================================================
 
 	    private void validateSearchResult() {
@@ -304,7 +306,7 @@ public class TestSearchStepDefinition extends Base {
 	        boolean resultDisplayed = searchPage.ProductFoundMessage().isDisplayed();
 	        Assert.assertTrue(resultDisplayed,"Search results were not displayed");
 	    }
-
+	    
 	    // =====================================================
 	    // COMMON - Invalid Search Result Validation
 	    // =====================================================
@@ -317,6 +319,7 @@ public class TestSearchStepDefinition extends Base {
 	     			boolean successVisible = searchPage.ProductNotFoundMessage().isDisplayed();
 	     			Assert.assertTrue(successVisible, "Product not found message is displayed - Search may have failed");
 	    }
+	 
 	 
 	
 	    // =====================================================
