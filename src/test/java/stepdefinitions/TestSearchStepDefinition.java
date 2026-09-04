@@ -321,6 +321,7 @@ public class TestSearchStepDefinition extends Base {
 	    }
 	 
 	 
+	
 	    // =====================================================
 	    // CLOSE BROWSER
 	    // =====================================================
